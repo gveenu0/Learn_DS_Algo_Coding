@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "679044393057",
+    "project_id": "learn-ds-algo-coding",
+    "storage_bucket": "learn-ds-algo-coding.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679044393057:android:bc9af9687c832a323be220",
+        "android_client_info": {
+          "package_name": "com.softtechnotech.learndsalgocoding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679044393057-hhhovb38tofjhimoil8oc1dljshmqt65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCnYh3YmtdFoc0Y6BT9w8uf4dpQbWTXwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679044393057-hhhovb38tofjhimoil8oc1dljshmqt65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

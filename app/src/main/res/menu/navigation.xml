@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/invoice"
+            android:icon="@drawable/mainactivitybutton"
+            android:title="DS Algo"/>
+    <item
+            android:id="@+id/python"
+            android:icon="@drawable/python_vector"
+            android:title="Python"/>
+    <item
+            android:id="@+id/java"
+            android:icon="@drawable/java_vector"
+            android:title="Java"/>
+</menu>
