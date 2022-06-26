@@ -225,7 +225,7 @@ public class registerPage extends AppCompatActivity {
                             userEmail = user.getEmail();
                             if(res != null && res.getCount() > 0){
                                 login.flag = 1;
-                                startActivity(new Intent(registerPage.this, home.class));
+                                startActivity(new Intent(registerPage.this, DsAlgoAct.class));
                             }
                             else{
                                 startActivity(new Intent(registerPage.this, DsAlgoAct.class));

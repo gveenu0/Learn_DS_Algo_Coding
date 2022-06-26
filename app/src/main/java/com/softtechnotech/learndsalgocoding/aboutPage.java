@@ -16,7 +16,7 @@ public class aboutPage extends AppCompatActivity {
         home.setOnClickListener(v -> startHomeActivity());
     }
     public void startHomeActivity(){
-        Intent intent = new Intent(this, home.class);
+        Intent intent = new Intent(this, DsAlgoAct.class);
         startActivity(intent);
     }
 }

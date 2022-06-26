@@ -16,11 +16,13 @@
         <activity android:name=".aboutPage" />
         <activity android:name=".contactUs" />
         <activity android:name=".DsAlgoAct" />
-        <activity android:name=".ArrayDSA" />
+        <activity android:name=".ArrayDSA"
+            android:theme="@style/Theme.YtPage"/>
         <activity android:name=".forgotPassword" />
         <activity android:name=".home" />
         <activity android:name=".JavaAct" />
         <activity android:name=".login" />
+        <activity android:name=".updateYourDetails"/>
         <activity android:name=".offline" />
         <activity android:name=".PythonAct" />
         <activity android:name=".registerPage" />

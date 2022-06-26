@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void startInternalActivity(){
-        Intent intent = new Intent(this, home.class);
+        Intent intent = new Intent(this, DsAlgoAct.class);
         startActivity(intent);
     }
 

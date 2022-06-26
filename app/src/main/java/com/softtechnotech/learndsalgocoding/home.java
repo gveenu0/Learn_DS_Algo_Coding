@@ -4,8 +4,6 @@ import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -43,7 +41,7 @@ public class home extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     public final int REQUEST_CODE_ASK_PERMISSIONS = 1;
     public static int flag = 0, flagLogin = 0;
-    public static String preShopEmail, userName,strCustomerName,strCustomerMobile,strCustomerAddress,strCustomerPincode,strCustomerEmail,strOtherDetail;
+    public static String preEmail, userName,strStudentName,strStudentMobile,strHighestEducation,strEducationField,strStudentEmail;
     private String strPassword;
 
     @Override
@@ -93,34 +91,24 @@ public class home extends AppCompatActivity {
         }
         if(flag == 1 || flagLogin == 1){
             FirebaseUser currentUser = mAuth.getCurrentUser();
-            preShopEmail = currentUser.getEmail();
-            userName = preShopEmail.replaceAll("[@.]","");
+            preEmail = currentUser.getEmail();
+            userName = preEmail.replaceAll("[@.]","");
             Menu nav_menu = nav_view.getMenu();
             nav_menu.findItem(R.id.updatePassword).setVisible(false);
         }
         else if(flag == 2 || flagLogin == 2){
             sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
             strPassword = sharedPreferences.getString("LOGIN", null);
-            preShopEmail = sharedPreferences.getString("EMAIL", null);
+            preEmail = sharedPreferences.getString("EMAIL", null);
             userName = sharedPreferences.getString("USERNAME", null);
             if(strPassword != null){
-                mAuth.signInWithEmailAndPassword(preShopEmail, strPassword).addOnCompleteListener(home.this, new OnCompleteListener<AuthResult>() {
+                mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(home.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                             if (user != null) {
                                 boolean emailVerified = user.isEmailVerified();
-//                                if(!emailVerified){
-//                                    new AlertDialog.Builder(home.this)
-//                                            .setTitle("Email Verification")
-//                                            .setMessage("Please verify your email id")
-//                                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-//                                                @Override
-//                                                public void onClick(DialogInterface dialog, int which) {
-//                                                }
-//                                            }).show();
-//                                }
                             }
                         }
                         else{
@@ -142,22 +130,21 @@ public class home extends AppCompatActivity {
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Firebase Helper and Firebase Authentication xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
         sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
-        strCustomerName = sharedPreferences.getString("CUSTOMERNAME", null);
-        strCustomerMobile = sharedPreferences.getString("CUSTOMERMOBILE", null);
-        strCustomerAddress = sharedPreferences.getString("CUSTOMERADDRESS", null);
-        strCustomerPincode = sharedPreferences.getString("CUSTOMERPINCODE", null);
-        strCustomerEmail = sharedPreferences.getString("CUSTOMEREMAIL", null);
-        strOtherDetail = sharedPreferences.getString("OTHERDETAIL", null);
+        strStudentName = sharedPreferences.getString("CUSTOMERNAME", null);
+        strStudentMobile = sharedPreferences.getString("CUSTOMERMOBILE", null);
+        strHighestEducation = sharedPreferences.getString("CUSTOMERADDRESS", null);
+        strEducationField = sharedPreferences.getString("CUSTOMERPINCODE", null);
+        strStudentEmail = sharedPreferences.getString("CUSTOMEREMAIL", null);
         Log.d("MyTag", Integer.toString(flag));
         demoRef = rootRef.child("Invoice").child(userName).child("shopDetail");
         demoRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.child("shopEmail").exists()){
-                    String preShopEmail = dataSnapshot.child("shopEmail").getValue().toString();
+                    String preEmail = dataSnapshot.child("shopEmail").getValue().toString();
                     sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
                     strPassword = sharedPreferences.getString("LOGIN", null);
-                    mAuth.signInWithEmailAndPassword(preShopEmail, strPassword).addOnCompleteListener(home.this, new OnCompleteListener<AuthResult>() {
+                    mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(home.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
@@ -202,8 +189,8 @@ public class home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if(id == R.id.aboutEreceipt){
-                    startAboutEreceiptActivity();
+                if(id == R.id.aboutApp){
+                    startAboutActivity();
                 }
                 else if(id == R.id.updatePassword){
                     startUpdatePasswordActivity();
@@ -238,13 +225,13 @@ public class home extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if(id == R.id.invoice){
-                    startInvoiceActivity();
+                    startDsAlgoActivity();
                 }
                 else if(id == R.id.python){
-                    startTransferMoneyActivity();
+                    startPythonActivity();
                 }
                 else if(id == R.id.java){
-                    startPastInvoiceActivity();
+                    startJavaActivity();
                 }
                 return false;
             }
@@ -273,19 +260,19 @@ public class home extends AppCompatActivity {
         Intent intent = new Intent(this, com.softtechnotech.learndsalgocoding.contactUs.class);
         startActivity(intent);
     }
-    public void startAboutEreceiptActivity(){
+    public void startAboutActivity(){
         Intent intent = new Intent(this, com.softtechnotech.learndsalgocoding.aboutPage.class);
         startActivity(intent);
     }
-    public void startPastInvoiceActivity(){
+    public void startJavaActivity(){
         Intent intent = new Intent(this, JavaAct.class);
         startActivity(intent);
     }
-    public void startInvoiceActivity(){
+    public void startDsAlgoActivity(){
         Intent intent = new Intent(this, DsAlgoAct.class);
         startActivity(intent);
     }
-    public void startTransferMoneyActivity(){
+    public void startPythonActivity(){
         Intent intent = new Intent(this, PythonAct.class);
         startActivity(intent);
     }

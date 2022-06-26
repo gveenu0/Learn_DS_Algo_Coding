@@ -1,368 +1,412 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    tools:context="com.softtechnotech.learndsalgocoding.registerPage"
+    android:id="@+id/dl">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="0dp"
+            android:layout_weight="18.5">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/iv_array"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
-
-                <TextView
-                    android:id="@+id/tv_array"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Array" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_matrix"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_array"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_array" />
 
-                <TextView
-                    android:id="@+id/tv_matrix"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_array"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Array"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Matrix" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_string"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_matrix"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_matrix" />
 
-                <TextView
-                    android:id="@+id/tv_string"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_matrix"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Matrix"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="String" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_searching_sort"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_string"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_string" />
 
-                <TextView
-                    android:id="@+id/tv_search_sort"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_string"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="String"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Search Sort" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_linkedlist"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_searching_sort"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_search_sort" />
 
-                <TextView
-                    android:id="@+id/tv_linkedlist"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_search_sort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Search Sort"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Linked List" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_binary_tree"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_linkedlist"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_linklist" />
 
-                <TextView
-                    android:id="@+id/tv_binary_tree"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_linkedlist"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Linked List"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Binary Tree" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_binary_search_tree"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_binary_tree"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_binarytree" />
 
-                <TextView
-                    android:id="@+id/tv_binary_search_tree"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_binary_tree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Binary Tree"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Binary Search Tree" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_greedy"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_binary_search_tree"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_binarysearch" />
 
-                <TextView
-                    android:id="@+id/tv_greedy"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_binary_search_tree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Binary Search Tree"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Greedy Approach" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_back_tracking"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_greedy"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_greedy" />
 
-                <TextView
-                    android:id="@+id/tv_back_tracking"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_greedy"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Greedy Approach"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Back Tracking" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_stack_Qurues"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_back_tracking"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_backtracking" />
 
-                <TextView
-                    android:id="@+id/tv_stack_Qurues"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_back_tracking"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Back Tracking"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Stack and Queues" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_heap"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_stack_Qurues"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_stack" />
 
-                <TextView
-                    android:id="@+id/tv_heap"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_stack_Qurues"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Stack and Queues"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Heap" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_graph"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_heap"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_heap" />
 
-                <TextView
-                    android:id="@+id/tv_graph"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_heap"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Heap"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Graph" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_trie"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_graph"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_graph" />
 
-                <TextView
-                    android:id="@+id/tv_trie"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_graph"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Graph"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Trie" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_dp"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_trie"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_trie" />
 
-                <TextView
-                    android:id="@+id/tv_dp"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_trie"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Trie"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Dynamic Programming" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="5"
-                android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="5">
 
-                <ImageView
-                    android:id="@+id/iv_bit_manipulation"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/java_vector" />
+                    <ImageView
+                        android:id="@+id/iv_dp"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_dynamic" />
 
-                <TextView
-                    android:id="@+id/tv_bit_manipulation"
-                    android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/tv_dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Dynamic Programming"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_vertical"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="8dp"
-                    android:text="Bit Manipulation" />
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:id="@+id/iv_bit_manipulation"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_bitmanipulation" />
+
+                    <TextView
+                        android:id="@+id/tv_bit_manipulation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical"
+                        android:text="Bit Manipulation"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
             </LinearLayout>
+        </ScrollView>
 
-        </LinearLayout>
-    </ScrollView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.5"
+            android:background="@color/colorPrimary"
+            app:itemIconTint="#ffffff"
+            app:itemTextColor="#ffffff"
+            app:menu="@menu/navigation" />
 
+    </LinearLayout>
 
-</LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu" >
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -29,12 +29,12 @@ public class updatePassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_password);
-        shopEmail = findViewById(R.id.shopEmail);
+        shopEmail = findViewById(R.id.yourEmail);
         update = findViewById(R.id.update);
 
         mAuth = FirebaseAuth.getInstance();
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice").child(com.softtechnotech.learndsalgocoding.home.userName);
+        demoRef = rootRef.child("Invoice").child(com.softtechnotech.learndsalgocoding.DsAlgoAct.userName);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +74,7 @@ public class updatePassword extends AppCompatActivity {
         });
     }
     public void startActivityUpdate(){
-        Intent intent = new Intent(this, com.softtechnotech.learndsalgocoding.home.class);
+        Intent intent = new Intent(this, DsAlgoAct.class);
         startActivity(intent);
         nDialog.dismiss();
     }

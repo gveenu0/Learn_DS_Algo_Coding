@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#2A8178</color>
     <color name="colorAccent">#81E7DD</color>
     <color name="colorPage">#99FFFFFF</color>
+    <color name="button_green">#D9FFDA</color>
     <color name="lightBlue">#9EABFF</color>
     <color name="lightRed">#FF8E85</color>
     <color name="lightGreen">#A1FFA4</color>

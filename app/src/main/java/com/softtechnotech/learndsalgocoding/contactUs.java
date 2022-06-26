@@ -56,7 +56,7 @@ public class contactUs extends AppCompatActivity {
         });
     }
     public void startHomeActivity(){
-        Intent intent = new Intent(this, home.class);
+        Intent intent = new Intent(this, DsAlgoAct.class);
         startActivity(intent);
     }
     public void startFacebookActivity(){

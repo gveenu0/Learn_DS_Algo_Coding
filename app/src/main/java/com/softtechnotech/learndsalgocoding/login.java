@@ -130,7 +130,7 @@ public class login extends AppCompatActivity {
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Firebase Helper xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
 
     public void startActivityLogin(){
-        Intent intent = new Intent(this, com.softtechnotech.learndsalgocoding.home.class);
+        Intent intent = new Intent(this, DsAlgoAct.class);
         File myDir = new File(Environment.getExternalStorageDirectory().toString(), "Invoice");
 
         final String newUser, newEmail;
