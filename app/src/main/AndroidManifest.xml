@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.softtechnotech.learndsalgocoding">
+    package="com.softtechnotech.learndsalgocoding" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -13,16 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ytPlayAct"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_yt_play"
+            android:theme="@style/AppTheme.Fullscreen" />
         <activity android:name=".aboutPage" />
         <activity android:name=".contactUs" />
         <activity android:name=".DsAlgoAct" />
-        <activity android:name=".ArrayDSA"
-            android:theme="@style/Theme.YtPage"/>
+        <activity
+            android:name=".ArrayDSA"
+            android:theme="@style/Theme.YtPage" />
         <activity android:name=".forgotPassword" />
         <activity android:name=".home" />
         <activity android:name=".JavaAct" />
         <activity android:name=".login" />
-        <activity android:name=".updateYourDetails"/>
+        <activity android:name=".updateYourDetails" />
         <activity android:name=".offline" />
         <activity android:name=".PythonAct" />
         <activity android:name=".registerPage" />
@@ -31,10 +39,12 @@
         <activity android:name=".termsAndConditions" />
         <activity android:name=".updatePassword" />
         <activity android:name=".wrg" />
-        <activity android:name=".MainActivity"
-            android:exported="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

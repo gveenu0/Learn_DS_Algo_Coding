@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -18,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -35,6 +38,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstants;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.YouTubePlayerUtils;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 import com.softtechnotech.learndsalgocoding.utils.FullScreenHelper;
@@ -61,9 +65,11 @@ public class ArrayDSA extends AppCompatActivity {
     YouTubePlayerView youTubePlayerView;
     ListView listVideo;
     AdapterList objAdapter;
+    Button fullscreen;
     ArrayList<String>  videoName;
     ArrayList<String>  videoLink;
     int curVideoIndex = 0;
+    Intent intent;
     private FullScreenHelper fullScreenHelper = new FullScreenHelper(this);
 
 
@@ -77,7 +83,13 @@ public class ArrayDSA extends AppCompatActivity {
         listVideo = findViewById(R.id.list_video);
         ImageView iv_youtube_thumnail=findViewById(R.id.iv);
         youTubePlayerView = findViewById(R.id.youtube_player_view);
-        init();
+        fullscreen = findViewById(R.id.button_fullscreen);
+        videoName = getVideoInfo(0);
+        videoLink = getVideoInfo(1);
+        videoId=extractYoutubeId(videoLink.get(0));
+        intent = new Intent(this, ytPlayAct.class);
+
+
 
 //            String img_url="http://img.youtube.com/vi/"+videoId+"/0.jpg"; // this is link which will give u thumnail image of that video
 //            Picasso.with(ArrayDSA.this)
@@ -92,6 +104,18 @@ public class ArrayDSA extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        init();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        youTubePlayerView.removeYouTubePlayerListener(new AbstractYouTubePlayerListener(){
+        });
+    }
 
     public String extractYoutubeId(String url){
         String query, id = null;
@@ -115,36 +139,22 @@ public class ArrayDSA extends AppCompatActivity {
     }
 
 
-    @Override
-    public void onBackPressed() {
-        if (youTubePlayerView.isFullScreen())
-            youTubePlayerView.exitFullScreen();
-        else
-            super.onBackPressed();
-    }
-
 //    @Override
-//    public void onConfigurationChanged(@NonNull Configuration newConfig) {
-//        super.onConfigurationChanged(newConfig);
-//        // Checks the orientation of the screen
-//        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-//            youTubePlayerView.enterFullScreen();
-//        }
-//        else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+//    public void onBackPressed() {
+//        if (youTubePlayerView.isFullScreen())
 //            youTubePlayerView.exitFullScreen();
-//        }
+//        else
+//            super.onBackPressed();
 //    }
 
+
     private void init(){
-        videoName = getVideoInfo(0);
-        videoLink = getVideoInfo(1);
-        videoId=extractYoutubeId(videoLink.get(0));
         Log.e("Video_Name", videoName + "");
         Log.e("Video_Link", videoLink + "");
         Log.e("Video_Id", videoId + "");
         objAdapter = new AdapterList(getApplicationContext(), videoName);
         listVideo.setAdapter(objAdapter);
-        getLifecycle().addObserver(youTubePlayerView);
+        ArrayDSA.this.getLifecycle().addObserver(youTubePlayerView);
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
@@ -169,21 +179,24 @@ public class ArrayDSA extends AppCompatActivity {
                     }
                 });
                 setPlaybackSpeedButtonsClickListeners(youTubePlayer);
-                setFullscreenButtonListener();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    public void run() {
+                        setFullscreenButtonListener();
+                    }
+                }, 5000);
             }
 
-//            @Override
-//            public void onPlaybackRateChange(YouTubePlayer youTubePlayer, PlayerConstants.PlaybackRate playbackRate) {
-//                TextView playbackSpeedTextView = findViewById(R.id.playback_speed_text_view);
-//                String playbackSpeed = "Playback speed: ";
-//                playbackSpeedTextView.setText(playbackSpeed + playbackRate);
-//            }
         });
-
     }
     private void setFullscreenButtonListener(){
-        Button fullscreen = findViewById(R.id.button_fullscreen);
-        fullscreen.setOnClickListener(view -> youTubePlayerView.enterFullScreen());
+        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+        fullscreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startYtFull();
+            }
+        });
     }
     private void setPlaybackSpeedButtonsClickListeners(YouTubePlayer youTubePlayer) {
         Button playbackSpeed_50= findViewById(R.id.button_speed_50);
@@ -210,6 +223,10 @@ public class ArrayDSA extends AppCompatActivity {
             e.printStackTrace();
         }
         return videoInfo;
+    }
+    public void startYtFull(){
+        intent.putExtra("videoId",videoId);
+        startActivity(intent);
     }
 
 }

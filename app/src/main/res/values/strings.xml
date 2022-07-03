@@ -3,4 +3,7 @@
     <string name="Open">Learn DS Algo Coding</string>
     <string name="Close">Learn DS Algo Coding</string>
     <string name="Slogen">Ease Your Learning Experience</string>
+    <string name="title_activity_yt_play">ytPlayAct</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
