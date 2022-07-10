@@ -99,7 +99,7 @@ public class JavaAct extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if(id == R.id.invoice){
+                if(id == R.id.ds_algo){
                     startDsAlgoActivity();
                 }
                 else if(id == R.id.python){

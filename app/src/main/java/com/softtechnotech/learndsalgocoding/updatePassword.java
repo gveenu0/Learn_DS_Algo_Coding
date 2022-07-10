@@ -21,20 +21,20 @@ public class updatePassword extends AppCompatActivity {
     DatabaseReference rootRef, demoRef;
     private FirebaseAuth mAuth;
 
-    EditText shopEmail;
+    EditText userEmail;
     Button update;
-    public static String strShopEmail;
+    public static String strUserEmail;
     ProgressDialog nDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_password);
-        shopEmail = findViewById(R.id.yourEmail);
+        userEmail = findViewById(R.id.yourEmail);
         update = findViewById(R.id.update);
 
         mAuth = FirebaseAuth.getInstance();
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice").child(com.softtechnotech.learndsalgocoding.DsAlgoAct.userName);
+        demoRef = rootRef.child("Users").child(com.softtechnotech.learndsalgocoding.DsAlgoAct.userName);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,13 +43,13 @@ public class updatePassword extends AppCompatActivity {
                 nDialog.setIndeterminate(false);
                 nDialog.setCancelable(true);
                 nDialog.show();
-                strShopEmail = shopEmail.getText().toString();
-                if(strShopEmail.isEmpty()){
+                strUserEmail = userEmail.getText().toString();
+                if(strUserEmail.isEmpty()){
                     Toast.makeText(updatePassword.this, "Enter Email", Toast.LENGTH_SHORT).show();
                     nDialog.dismiss();
                     return;
                 }
-                if(com.softtechnotech.learndsalgocoding.login.strNewUsername.equals(strShopEmail)){
+                if(com.softtechnotech.learndsalgocoding.login.strNewUsername.equals(strUserEmail)){
                     FirebaseAuth.getInstance().sendPasswordResetEmail(com.softtechnotech.learndsalgocoding.login.strNewUsername)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
@@ -66,7 +66,7 @@ public class updatePassword extends AppCompatActivity {
                             });
                 }
                 else{
-                    Toast.makeText(updatePassword.this, "Enter correct shop email",
+                    Toast.makeText(updatePassword.this, "Enter correct user email",
                             Toast.LENGTH_SHORT).show();
                     nDialog.dismiss();
                 }

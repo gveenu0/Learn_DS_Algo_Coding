@@ -61,7 +61,7 @@ public class registerPage extends AppCompatActivity {
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice");
+        demoRef = rootRef.child("Users");
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,7 +116,6 @@ public class registerPage extends AppCompatActivity {
                                                     demoRef1 = demoRef.child(username);
                                                     demoRef1.child("username").setValue(username);
                                                     demoRef1.child("count").setValue(count);
-
                                                 } else {
                                                     startOfflineActivity();
                                                 }
@@ -162,7 +161,7 @@ public class registerPage extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     FirebaseAuth.getInstance().signOut();
-                    startActivity(new Intent(registerPage.this, DsAlgoAct.class));
+                    startActivity(new Intent(registerPage.this, userFirstDetail.class));
                     nDialog.dismiss();
                     finish();
                 }

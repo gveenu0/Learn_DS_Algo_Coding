@@ -84,6 +84,6 @@ public class MainActivity extends AppCompatActivity {
     }
     @Override
     public void onBackPressed() {
-        Toast.makeText(MainActivity.this, "Login or Register your shop", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "Login or Register your User", Toast.LENGTH_SHORT).show();
     }
 }

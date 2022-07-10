@@ -136,12 +136,12 @@ public class home extends AppCompatActivity {
         strEducationField = sharedPreferences.getString("CUSTOMERPINCODE", null);
         strStudentEmail = sharedPreferences.getString("CUSTOMEREMAIL", null);
         Log.d("MyTag", Integer.toString(flag));
-        demoRef = rootRef.child("Invoice").child(userName).child("shopDetail");
+        demoRef = rootRef.child("Users").child(userName).child("userDetail");
         demoRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.child("shopEmail").exists()){
-                    String preEmail = dataSnapshot.child("shopEmail").getValue().toString();
+                if(dataSnapshot.child("userEmail").exists()){
+                    String preEmail = dataSnapshot.child("userEmail").getValue().toString();
                     sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
                     strPassword = sharedPreferences.getString("LOGIN", null);
                     mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(home.this, new OnCompleteListener<AuthResult>() {
@@ -224,7 +224,7 @@ public class home extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if(id == R.id.invoice){
+                if(id == R.id.ds_algo){
                     startDsAlgoActivity();
                 }
                 else if(id == R.id.python){
