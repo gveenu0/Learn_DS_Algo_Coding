@@ -64,26 +64,26 @@ public class updateYourDetails extends AppCompatActivity {
                 flag = 1;
             }while(res.moveToNext());
         }
-        demoRef = rootRef.child("Invoice").child(DsAlgoAct.userName);
+        demoRef = rootRef.child("Users").child(DsAlgoAct.userName);
         demoRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.child("shopDetail").exists()){
-                    if(dataSnapshot.child("shopDetail").child("yourName").exists()){
+                if(dataSnapshot.child("userDetail").exists()){
+                    if(dataSnapshot.child("userDetail").child("yourName").exists()){
                         check = 1;
-                        yourName.setText(dataSnapshot.child("shopDetail").child("yourName").getValue().toString());
+                        yourName.setText(dataSnapshot.child("userDetail").child("yourName").getValue().toString());
                     }
-                    if(dataSnapshot.child("shopDetail").child("yourMobile").exists()){
-                        yourMobile.setText(dataSnapshot.child("shopDetail").child("yourMobile").getValue().toString());
+                    if(dataSnapshot.child("userDetail").child("yourMobile").exists()){
+                        yourMobile.setText(dataSnapshot.child("userDetail").child("yourMobile").getValue().toString());
                     }
-                    if(dataSnapshot.child("shopDetail").child("highestEducation").exists()){
-                        highestEducation.setText(dataSnapshot.child("shopDetail").child("highestEducation").getValue().toString());
+                    if(dataSnapshot.child("userDetail").child("highestEducation").exists()){
+                        highestEducation.setText(dataSnapshot.child("userDetail").child("highestEducation").getValue().toString());
                     }
-                    if(dataSnapshot.child("shopDetail").child("educationField").exists()){
-                        educationField.setText(dataSnapshot.child("shopDetail").child("educationField").getValue().toString());
+                    if(dataSnapshot.child("userDetail").child("educationField").exists()){
+                        educationField.setText(dataSnapshot.child("userDetail").child("educationField").getValue().toString());
                     }
-                    if(dataSnapshot.child("shopDetail").child("yourEmail").exists()){
-                        yourEmail.setText(dataSnapshot.child("shopDetail").child("yourEmail").getValue().toString());
+                    if(dataSnapshot.child("userDetail").child("yourEmail").exists()){
+                        yourEmail.setText(dataSnapshot.child("userDetail").child("yourEmail").getValue().toString());
                     }
                 }
             }
@@ -97,7 +97,7 @@ public class updateYourDetails extends AppCompatActivity {
 
         FirebaseAuth.getInstance();
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice").child(DsAlgoAct.userName);
+        demoRef = rootRef.child("Users").child(DsAlgoAct.userName);
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,7 +113,7 @@ public class updateYourDetails extends AppCompatActivity {
                 stryourEmail = yourEmail.getText().toString();
 
                 if(stryourName.matches("")){
-                    Toast.makeText(updateYourDetails.this, "Enter Shop Name",Toast.LENGTH_LONG).show();
+                    Toast.makeText(updateYourDetails.this, "Enter User Name",Toast.LENGTH_LONG).show();
                     nDialog.dismiss();
                     return;
                 }
@@ -128,22 +128,16 @@ public class updateYourDetails extends AppCompatActivity {
                     return;
                 }
                 if(strhighestEducation.matches("")){
-                    Toast.makeText(updateYourDetails.this, "Enter Address",Toast.LENGTH_LONG).show();
+                    Toast.makeText(updateYourDetails.this, "Enter highest Education",Toast.LENGTH_LONG).show();
                     nDialog.dismiss();
                     return;
                 }
                 if(streducationField.matches("")){
-                    Toast.makeText(updateYourDetails.this, "Enter Pincode",Toast.LENGTH_LONG).show();
+                    Toast.makeText(updateYourDetails.this, "Enter Education field",Toast.LENGTH_LONG).show();
                     nDialog.dismiss();
                     return;
                 }
-                if(streducationField.length() != 6){
-                    Toast.makeText(updateYourDetails.this, "Enter valid pincode number",Toast.LENGTH_LONG).show();
-                    nDialog.dismiss();
-                    return;
-                }
-
-                demoRef1 = demoRef.child("shopDetail");
+                demoRef1 = demoRef.child("userDetail");
                 demoRef1.child("yourName").setValue(stryourName);
                 demoRef1.child("yourMobile").setValue(stryourMobile);
                 demoRef1.child("highestEducation").setValue(strhighestEducation);
@@ -171,13 +165,13 @@ public class updateYourDetails extends AppCompatActivity {
                     }
 
                 }
-                startUpdateShopDetailsActivity();
+                startUpdateUserDetailsActivity();
             }
         });
     }
-    public void startUpdateShopDetailsActivity(){
+    public void startUpdateUserDetailsActivity(){
         Intent intent = new Intent(this, DsAlgoAct.class);
-        Toast.makeText(updateYourDetails.this, "Shop details successfully updated",Toast.LENGTH_LONG).show();
+        Toast.makeText(updateYourDetails.this, "User details successfully updated",Toast.LENGTH_LONG).show();
         startActivity(intent);
         nDialog.dismiss();
     }

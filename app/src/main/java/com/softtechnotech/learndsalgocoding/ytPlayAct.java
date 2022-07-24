@@ -29,12 +29,14 @@ public class ytPlayAct extends AppCompatActivity {
     private static final int UI_ANIMATION_DELAY = 300;
     private YouTubePlayerView youtubeFullView;
     String videoId;
+    float timeStamp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent intent=getIntent();
         videoId = intent.getStringExtra("videoId");
+        timeStamp = intent.getFloatExtra("timeStamp", 0);
         setContentView(R.layout.activity_yt_play);
         youtubeFullView = findViewById(R.id.youtube_full_view);
         ytPlayAct.this.getLifecycle().addObserver(youtubeFullView);
@@ -48,9 +50,15 @@ public class ytPlayAct extends AppCompatActivity {
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
                 YouTubePlayerUtils.loadOrCueVideo(
                         youTubePlayer, ytPlayAct.this.getLifecycle(),
-                        videoId, 0f
+                        videoId, timeStamp
                 );
-                findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    public void run() {
+                        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+                    }
+                }, 5000);
+
             }
         });
     }
@@ -60,6 +68,7 @@ public class ytPlayAct extends AppCompatActivity {
         super.onPostCreate(savedInstanceState);
         delayedHide(250);
     }
+    
 
     private final View.OnTouchListener mDelayHideTouchListener = new View.OnTouchListener() {
         @Override

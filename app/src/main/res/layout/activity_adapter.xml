@@ -6,12 +6,12 @@
     android:layout_height="50dp"
     tools:context=".AdapterList"
     android:orientation="horizontal"
-    android:background="#FFFFFF"
-    android:layout_margin="8sp">
+    android:layout_margin="1dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="5"
+        android:background="#F6FBFB"
         android:orientation="horizontal">
 
         <ImageView
@@ -19,6 +19,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_margin="1dp"
+            android:background="@color/colorwhite"
             android:src="@drawable/java_vector" />
 
         <TextView
@@ -26,6 +28,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
+            android:background="@color/colorwhite"
+            android:layout_margin="1dp"
             android:gravity="center_vertical"
             android:textStyle="bold"
             android:layout_marginHorizontal="8dp"

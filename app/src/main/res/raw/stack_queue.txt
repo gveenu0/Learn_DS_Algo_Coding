@@ -1,0 +1,15 @@
+Increasing Order Search Tree  === https://www.youtube.com/watch?v=q9u_KFBp2E8
+Min Stack  === https://www.youtube.com/watch?v=cKA69sYP0Ps
+Longest Valid Parentheses (stack version) === https://www.youtube.com/watch?v=keE2TutTbS8
+1441. Build an Array With Stack Operations  === https://www.youtube.com/watch?v=2ie1esMzUdc
+406 Queue Reconstruction by Height  === https://www.youtube.com/watch?v=TmEUBILL8fg
+950. Reveal Cards In Increasing Order  === https://www.youtube.com/watch?v=COiE-PQqf28
+1047. Remove All Adjacent Duplicates In String  === https://www.youtube.com/watch?v=ktxdRqB4Ymg
+234. Palindrome Linked List  === https://www.youtube.com/watch?v=2SrjHDxWMlI
+387 First Unique Character in a String  === https://www.youtube.com/watch?v=sOfJHJH0M7M
+316. Remove Duplicate Letters  === https://www.youtube.com/watch?v=2NGFucebfDk
+N-arry tree Preorder , Postorder & Level Order Traversal  === https://www.youtube.com/watch?v=3E6myDNC49I
+20. Valid Parentheses  === https://www.youtube.com/watch?v=8p8n_QmuDzA
+94. Binary Tree Inorder Traversal  === https://www.youtube.com/watch?v=8bKYXxSqORU
+1249. Minimum Remove to Make Valid Parentheses  === https://www.youtube.com/watch?v=1eLOIymPCfg
+225. Implement Stack using Queues  === https://www.youtube.com/watch?v=M7a9kDO9qMs

@@ -95,7 +95,6 @@
             android:textColorHint="@color/colorAccent"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-            android:inputType="number"
             />
 
         <EditText

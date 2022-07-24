@@ -23,19 +23,19 @@ import com.google.firebase.database.ValueEventListener;
 public class forgotPassword extends AppCompatActivity {
     DatabaseReference rootRef, demoRef;
 
-    EditText shopEmail;
+    EditText userEmail;
     Button update;
-    public static String strShopEmail, strNewShopEmail;
+    public static String strUserEmail, strNewUserEmail;
     ProgressDialog nDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
-        shopEmail = findViewById(R.id.yourEmail);
+        userEmail = findViewById(R.id.yourEmail);
         update = findViewById(R.id.update);
 
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice");
+        demoRef = rootRef.child("Users");
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,14 +44,14 @@ public class forgotPassword extends AppCompatActivity {
                 nDialog.setIndeterminate(false);
                 nDialog.setCancelable(true);
                 nDialog.show();
-                strShopEmail = shopEmail.getText().toString();
-                strNewShopEmail = strShopEmail.replaceAll("[@.]","");
-                if(strShopEmail.isEmpty()){
+                strUserEmail = userEmail.getText().toString();
+                strNewUserEmail = strUserEmail.replaceAll("[@.]","");
+                if(strUserEmail.isEmpty()){
                     Toast.makeText(forgotPassword.this, "Enter Email", Toast.LENGTH_SHORT).show();
                     nDialog.dismiss();
                     return;
                 }
-                if(!(strShopEmail.matches("[a-zA-Z0-9.]+@[a-z]+\\.+[a-z]+") || strShopEmail.matches("[a-zA-Z0-9.]+@[a-z]+\\.+[a-z]+\\.+[a-z]+"))){
+                if(!(strUserEmail.matches("[a-zA-Z0-9.]+@[a-z]+\\.+[a-z]+") || strUserEmail.matches("[a-zA-Z0-9.]+@[a-z]+\\.+[a-z]+\\.+[a-z]+"))){
                     Toast.makeText(forgotPassword.this, "Enter valid email",Toast.LENGTH_LONG).show();
                     nDialog.dismiss();
                     return;
@@ -59,8 +59,8 @@ public class forgotPassword extends AppCompatActivity {
                 demoRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.child(strNewShopEmail).exists()){
-                            FirebaseAuth.getInstance().sendPasswordResetEmail(strShopEmail)
+                        if(dataSnapshot.child(strNewUserEmail).exists()){
+                            FirebaseAuth.getInstance().sendPasswordResetEmail(strUserEmail)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {

@@ -55,7 +55,7 @@ public class login extends AppCompatActivity {
         myDb.getWritableDatabase();
         mAuth = FirebaseAuth.getInstance();
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice");
+        demoRef = rootRef.child("Users");
 
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Firebase Helper xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
@@ -131,7 +131,7 @@ public class login extends AppCompatActivity {
 
     public void startActivityLogin(){
         Intent intent = new Intent(this, DsAlgoAct.class);
-        File myDir = new File(Environment.getExternalStorageDirectory().toString(), "Invoice");
+        File myDir = new File(Environment.getExternalStorageDirectory().toString(), "Users");
 
         final String newUser, newEmail;
         newUser = strPassword;

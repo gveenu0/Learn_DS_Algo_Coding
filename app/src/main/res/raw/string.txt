@@ -1,0 +1,27 @@
+771. Jewels and Stones  === https://www.youtube.com/watch?v=Kyd4c4FjW1w
+500. Keyboard Row  === https://www.youtube.com/watch?v=J1lyyaG9m7E
+1374. Generate a String With Characters That Have Odd Counts  === https://www.youtube.com/watch?v=Ch_3xAzxSYo
+557. Reverse Words in a String III  === https://www.youtube.com/watch?v=Z3pawlBj8Zo
+Reformat The String  === https://www.youtube.com/watch?v=-pMh9xlJmoc
+Maximum Score After Splitting a String  === https://www.youtube.com/watch?v=9OfmzsSZnP0
+First Unique Character in a String  === https://www.youtube.com/watch?v=pVsOnwPo6kk
+Find All Anagrams in a String  === https://www.youtube.com/watch?v=WHHi5KX3Flo
+205. Isomorphic Strings  === https://www.youtube.com/watch?v=qOUwtPIIhEU
+1512. Number of Good Pairs  === https://www.youtube.com/watch?v=qvQSvQaY9KI
+771. Jewels and Stones  === https://www.youtube.com/watch?v=lrEz_oYQv6E
+1071. Greatest Common Divisor of Strings  === https://www.youtube.com/watch?v=dEKZx0uAep8
+1048. Longest String Chain  === https://www.youtube.com/watch?v=pGfvOfb4eSQ
+Biweekly Contest 42  === https://www.youtube.com/watch?v=DJQKoKKkVS8
+535. Encode and Decode TinyURL  === https://www.youtube.com/watch?v=zMbHZnWZGGE
+Leetcode Weekly Contest 244  === https://www.youtube.com/watch?v=3PSRgAu-TTA
+14 Longest Common Prefix  === https://www.youtube.com/watch?v=8LDbrlZ7834
+500. Keyboard Row  === https://www.youtube.com/watch?v=lwUNh7T8TjY
+929. Unique Email Addresses  === https://www.youtube.com/watch?v=pD1NLRW6N9Y
+13. Roman to Integer  === https://www.youtube.com/watch?v=jih004Y1Rks
+28. Implement strStr()  === https://www.youtube.com/watch?v=SxnwaenZ67o
+2262. Total Appeal of A String  === https://www.youtube.com/watch?v=U_NEgLcJ_oA
+14. Longest Common Prefix  === https://www.youtube.com/watch?v=ncBTzCgt3Lw
+412. Fizz Buzz  === https://www.youtube.com/watch?v=Uq6MEiECDqk
+125. Valid Palindrome  === https://www.youtube.com/watch?v=SbtUtMTkOxI
+171. Excel Sheet Column Number  === https://www.youtube.com/watch?v=aBNokXaA3HI
+953. Verifying an Alien Dictionary  === https://www.youtube.com/watch?v=cCECUtcgykQ
