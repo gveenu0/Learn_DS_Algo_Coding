@@ -42,9 +42,11 @@
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_about.xml" value="0.14130434782608695" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_adapter.xml" value="0.14130434782608695" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_contact_us.xml" value="0.14130434782608695" />
-        <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_ds_algo.xml" value="0.1" />
+        <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_ds_algo.xml" value="0.16666666666666666" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_ds_algo_array.xml" value="0.1" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_ds_algo_array_old.xml" value="0.14130434782608695" />
+        <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_ds_algo_detail.xml" value="0.1" />
+        <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_ds_algorth.xml" value="0.1796875" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_forgot_password.xml" value="0.14130434782608695" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_home.xml" value="0.14130434782608695" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_java.xml" value="0.14130434782608695" />
@@ -62,6 +64,8 @@
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/activity_yt_play.xml" value="0.1" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/layout/navigation_header.xml" value="0.14130434782608695" />
         <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/menu/navigation.xml" value="0.1796875" />
+        <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/menu/navigation_menu.xml" value="0.1796875" />
+        <entry key="..\:/My_Workspace/Learn_DS_Algo_Coding/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1785" />
       </map>
     </option>
   </component>

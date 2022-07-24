@@ -11,6 +11,8 @@ import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.PlayerConstants;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
@@ -44,6 +46,9 @@ public class GreedyDSA extends AppCompatActivity {
         tracker = new YouTubePlayerTracker();
         
         setContentView(R.layout.activity_ds_algo_detail);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         listVideo = findViewById(R.id.list_video);
         youTubePlayerView = findViewById(R.id.youtube_player_view);
         fullscreen = findViewById(R.id.button_fullscreen);

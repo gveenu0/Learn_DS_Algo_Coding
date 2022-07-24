@@ -31,15 +31,9 @@ public class PythonAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python);
-//        TextView tv_array = findViewById(R.id.tv_array);
         nav_view = (NavigationView)findViewById(R.id.nav_view);
         final BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
 
-
-//        tv_array.setOnClickListener(view -> {
-//            Intent intent = new Intent(JavaAct.this, ArrayDSA.class);
-//            startActivity(intent);
-//        });
 
         dl = (DrawerLayout) findViewById(R.id.dl);
         abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
