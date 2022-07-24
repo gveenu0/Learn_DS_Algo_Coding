@@ -1,0 +1,28 @@
+1304. Find N Unique Integers Sum up to Zero  === https://www.youtube.com/watch?v=YZAu943vTwY
+1207. Unique Number of Occurrences  === https://www.youtube.com/watch?v=cGAXF_ZumCk
+384. Shuffle an Array  === https://www.youtube.com/watch?v=Uch00ZGPdG8
+1331. Rank Transform of an Array  === https://www.youtube.com/watch?v=NvJoprt7tF8
+1037. Valid Boomerang  === https://www.youtube.com/watch?v=NGQy5kglpNE
+1375. Bulb Switcher III  === https://www.youtube.com/watch?v=MXHvUtuMAPM
+1299. Replace Elements with Greatest Element on Right Side  === https://www.youtube.com/watch?v=KjOItwwcHZw
+Contiguous Array  === https://www.youtube.com/watch?v=b_tDSWFSed4
+Search in Rotated Sorted Array  === https://www.youtube.com/watch?v=p5nAVNxrjMg
+Subarray Sum Equals K  === https://www.youtube.com/watch?v=jbjjhJu-k0o
+Escape The Ghosts  === https://www.youtube.com/watch?v=W36Kd71Y4vs
+1394. Find Lucky Integer in an Array  === https://www.youtube.com/watch?v=gvn9XXohe5s
+1250. Check If It Is a Good Array  === https://www.youtube.com/watch?v=V2SliJTHGQE
+1442. Count Triplets That Can Form Two Arrays of Equal XOR  === https://www.youtube.com/watch?v=-WPBj3Jw0xA
+Maximum Sum Circular Subarray  === https://www.youtube.com/watch?v=C4G8m3vvWFA
+128 Longest Consecutive Sequence  === https://www.youtube.com/watch?v=6pE9tW_mwvs
+992. Subarrays with K Different Integers | LEETCODE HARD | LEETCODE === https://www.youtube.com/watch?v=88mGJqbnPVw
+974. Subarray Sums Divisible by K | LEETCODE MEDIUM | LEETCODE === https://www.youtube.com/watch?v=kiHpKTfovRY
+1640. Check Array Formation Through Concatenation | LEETCODE EASY | LEETCODE WEEKLY CONTEST 213 === https://www.youtube.com/watch?v=UEaBkGip6CY
+149. Max Points on a Line | LEETCODE HARD | GEOMETRY | CODE EXPLAINER === https://www.youtube.com/watch?v=Y8_WxLKYQ6Q
+904. Fruit Into Baskets | LEETCODE MEDIUM | GOOGLE INTERVIEW PROBLEM | CODE EXPLAINER === https://www.youtube.com/watch?v=zezIoRcYTAs
+283. Move Zeroes | LEETCODE INTERVIEW CORNER | LEETCODE | 2 POINTER === https://www.youtube.com/watch?v=HkrBz2Kb3RE
+Leetcode Biweekly Contest 60 | Find the Middle Index in Array | Find All Groups of Farmland === https://www.youtube.com/watch?v=zvMAneseUGw
+575. Distribute Candies | EASY PROBLEM | LEETCODE | CODE EXPLAINER === https://www.youtube.com/watch?v=UIQ8hCs_E1M
+66. Plus One | LEETCODE EASY | CODE EXPLAINER === https://www.youtube.com/watch?v=lXMy03Mj21M
+697. Degree of an Array | LEETCODE EASY | HASH MAP | ARRAY === https://www.youtube.com/watch?v=byGL1OtOmP0
+26. Remove Duplicates from Sorted Array | Leetcode Top Interview Questions Playlist | LEETCODE EASY === https://www.youtube.com/watch?v=DmD5lSYFwjk
+1. Two Sum | Leetcode Top Interview Questions Playlist | Leetcode EASY === https://www.youtube.com/watch?v=LIkDm1m6Oxk
