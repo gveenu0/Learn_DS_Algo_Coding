@@ -1,7 +1,5 @@
 package com.softtechnotech.learndsalgocoding;
 
-import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -34,7 +30,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class DsAlgoAct extends AppCompatActivity {
-
     com.softtechnotech.learndsalgocoding.DatabaseHelper myDb;
     DatabaseReference rootRef, demoRef;
     NavigationView nav_view;
@@ -46,13 +41,25 @@ public class DsAlgoAct extends AppCompatActivity {
     public static int flag = 0, flagLogin = 0;
     public static String preEmail, userName,strStudentName,strStudentMobile,strHighestEducation,strEducationField,strStudentEmail;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ds_algo);
         TextView tv_array = findViewById(R.id.tv_array);
+        TextView tv_matrix = findViewById(R.id.tv_matrix);
+        TextView tv_string= findViewById(R.id.tv_string);
+        TextView tv_search_sort = findViewById(R.id.tv_search_sort);
+        TextView tv_linked_list = findViewById(R.id.tv_linkedlist);
+        TextView tv_tree = findViewById(R.id.tv_binary_tree);
+        TextView tv_misc = findViewById(R.id.tv_binary_search_tree);
+        TextView tv_greedy= findViewById(R.id.tv_greedy);
+        TextView tv_back_track = findViewById(R.id.tv_back_tracking);
+        TextView tv_stack_queue = findViewById(R.id.tv_stack_Qurues);
+        TextView tv_heap = findViewById(R.id.tv_heap);
+        TextView tv_graph = findViewById(R.id.tv_graph);
+        TextView tv_trie = findViewById(R.id.tv_trie);
+        TextView tv_dp = findViewById(R.id.tv_dp);
+        TextView tv_bit = findViewById(R.id.tv_bit_manipulation);
         nav_view = (NavigationView)findViewById(R.id.nav_view);
         final BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
         myDb = new com.softtechnotech.learndsalgocoding.DatabaseHelper(this);
@@ -63,6 +70,62 @@ public class DsAlgoAct extends AppCompatActivity {
 
         tv_array.setOnClickListener(view -> {
             Intent intent = new Intent(DsAlgoAct.this, ArrayDSA.class);
+            startActivity(intent);
+        });
+        tv_matrix.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, MatrixDSA.class);
+            startActivity(intent);
+        });
+        tv_string.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, StringDSA.class);
+            startActivity(intent);
+        });
+        tv_search_sort.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, SearchSortDSA.class);
+            startActivity(intent);
+        });
+        tv_linked_list.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, LinkedListDSA.class);
+            startActivity(intent);
+        });
+        tv_tree.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, TreeDSA.class);
+            startActivity(intent);
+        });
+        tv_misc.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, MiscDSA.class);
+            startActivity(intent);
+        });
+        tv_greedy.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, GreedyDSA.class);
+            startActivity(intent);
+        });
+        tv_back_track.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, BackTrackDSA.class);
+            startActivity(intent);
+        });
+        tv_stack_queue.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, StackQueueDSA.class);
+            startActivity(intent);
+        });
+        tv_heap.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, HeapDSA.class);
+            startActivity(intent);
+        });
+        tv_graph.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, GraphDSA.class);
+            startActivity(intent);
+        });
+        tv_trie.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, TrieDSA.class);
+            startActivity(intent);
+        });
+        tv_dp.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, DpDSA.class);
+            startActivity(intent);
+        });
+        tv_bit.setOnClickListener(view -> {
+            Intent intent = new Intent(DsAlgoAct.this, BitDSA.class);
             startActivity(intent);
         });
 
@@ -241,7 +304,7 @@ public class DsAlgoAct extends AppCompatActivity {
             startSmwActivity();
         }
 
-//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Firebase Helper and Firebase Authentication xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//
+//Firebase Helper and Firebase Authentication //
         sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
         strStudentName = sharedPreferences.getString("CUSTOMERNAME", null);
         strStudentMobile = sharedPreferences.getString("CUSTOMERMOBILE", null);
@@ -264,14 +327,11 @@ public class DsAlgoAct extends AppCompatActivity {
                                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                                 if (user != null) {
                                     boolean emailVerified = user.isEmailVerified();
-                                    if(emailVerified == false){
+                                    if(!emailVerified){
                                         new AlertDialog.Builder(DsAlgoAct.this)
                                                 .setTitle("Email Verification")
                                                 .setMessage("Please verify your email id")
-                                                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialog, int which) {
-                                                    }
+                                                .setPositiveButton(android.R.string.yes, (dialog, which) -> {
                                                 }).show();
                                     }
                                 }

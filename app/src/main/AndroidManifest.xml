@@ -13,20 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".ytPlayAct"
-            android:screenOrientation="landscape"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="false"
-            android:label="@string/title_activity_yt_play"
-            android:theme="@style/AppTheme.Fullscreen" />
         <activity android:name=".aboutPage" />
         <activity android:name=".contactUs" />
         <activity android:name=".userFirstDetail" />
         <activity android:name=".DsAlgoAct" />
-        <activity
-            android:name=".ArrayDSA"
-            android:theme="@style/Theme.YtPage" />
         <activity android:name=".forgotPassword" />
         <activity android:name=".home" />
         <activity android:name=".JavaAct" />
@@ -40,6 +30,88 @@
         <activity android:name=".termsAndConditions" />
         <activity android:name=".updatePassword" />
         <activity android:name=".wrg" />
+        <activity
+            android:name=".ytPlayAct"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_yt_play"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".ArrayDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".MatrixDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".StringDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".SearchSortDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".LinkedListDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".TreeDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".MiscDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".GreedyDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".BackTrackDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".StackQueueDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".HeapDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".GraphDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".TrieDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".DpDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
+        <activity
+            android:name=".BitDSA"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.YtPage" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >

@@ -1,0 +1,125 @@
+1328. Break a Palindrome  === https://www.youtube.com/watch?v=pLzb27cOpuM
+60. Permutation Sequence  === https://www.youtube.com/watch?v=gB91SgAdmCg
+1317. Convert Integer to the Sum of Two No-Zero Integers  === https://www.youtube.com/watch?v=mW1-hkW-wLM
+Private video === https://www.youtube.com/watch?v=0EcX_M646XU
+Decompress Run-Length Encoded List  === https://www.youtube.com/watch?v=JGrd-wOxhjo
+leetcode 1325  === https://www.youtube.com/watch?v=sLgrWTOQSGs
+leetcode 1324  === https://www.youtube.com/watch?v=gu_fYCFS47E
+leetcode 1323  === https://www.youtube.com/watch?v=RDxtuE8Nhgs
+136. Single Number  === https://www.youtube.com/watch?v=nYoxPNCTDQA
+Counting Elements  === https://www.youtube.com/watch?v=eHtltHBn-Z0
+Last Stone Weight  === https://www.youtube.com/watch?v=w3mCdRG6Cos
+Number of Islands  === https://www.youtube.com/watch?v=JzPJ672BWpE
+Minimum Path Sum  === https://www.youtube.com/watch?v=cJXG7jP_8yI
+Display Table of Food Orders in a Restaurant  === https://www.youtube.com/watch?v=5ksoFqFv1WU
+Minimum Number of Frogs Croaking  === https://www.youtube.com/watch?v=ZePHjSG33Hc
+Bitwise AND of Numbers Range  === https://www.youtube.com/watch?v=RjR8ul5hooo
+Jump Game  === https://www.youtube.com/watch?v=6QdsVFzqZNA
+Longest Common Subsequence  === https://www.youtube.com/watch?v=b4deFnO3Lqc
+Maximum Points You Can Obtain from Cards  === https://www.youtube.com/watch?v=OGVET7p3Bow
+Diagonal Traverse II  === https://www.youtube.com/watch?v=6t82AO15Pgk
+Maximal Square  === https://www.youtube.com/watch?v=F0lidQ9xSnU
+First Unique Number  === https://www.youtube.com/watch?v=JLZWLBNCbts
+1403. Minimum Subsequence in Non-Increasing Order  === https://www.youtube.com/watch?v=j0KO_INXbMA
+1404. Number of Steps to Reduce a Number in Binary Representation to One  === https://www.youtube.com/watch?v=1viQQvE5AVg
+1395. Count Number of Teams  === https://www.youtube.com/watch?v=4F0AgAMhAUA
+First Bad Version  === https://www.youtube.com/watch?v=V8Q6N-CB2Ww
+Jewels and stones  === https://www.youtube.com/watch?v=gZwSqZWGDmA
+Ransom Note  === https://www.youtube.com/watch?v=KWZojFRw48k
+Number Complement  === https://www.youtube.com/watch?v=OSPS0SH7YRY
+Majority Element(Boyer-Moore Voting Algorithm)  === https://www.youtube.com/watch?v=xcjxhMc8QMQ
+Check If It Is a Straight Line  === https://www.youtube.com/watch?v=XTQTQPRP24I
+Valid Perfect Square  === https://www.youtube.com/watch?v=zBJItUjd4js
+Find the Town Judge  === https://www.youtube.com/watch?v=C-k3psD-agA
+Flood Fill  === https://www.youtube.com/watch?v=uaAK6FuKs8w
+Remove K Digits  === https://www.youtube.com/watch?v=XjC4pQrMIME
+Online Stock Span  === https://www.youtube.com/watch?v=-CXkO0GL5MU
+1446 Consecutive Characters  === https://www.youtube.com/watch?v=ZlYqpsIHiD4
+1447 Simplified Fractions  === https://www.youtube.com/watch?v=j8n4bTyZlNw
+1450 Number of Students Doing Homework at a Given Time  === https://www.youtube.com/watch?v=wq7IQDaqhFs
+1451 Rearrange Words in a Sentence  === https://www.youtube.com/watch?v=2T7nmKgTRik
+1452 People Whose List of Favorite Companies Is Not a Subset of Another List  === https://www.youtube.com/watch?v=yHtd08A2-gQ
+Biweekly Contest 23  === https://www.youtube.com/watch?v=7BNNYsw6tD8
+Weekly Contest 190  === https://www.youtube.com/watch?v=Uq2hwd87l20
+Max Dot Product of Two Subsequences  === https://www.youtube.com/watch?v=naFIqkyvQBs
+Weekly Contest 191  === https://www.youtube.com/watch?v=v4RTgRWA27k
+1466. Reorder Routes to Make All Paths Lead to the City Zero  === https://www.youtube.com/watch?v=cU47iO_Q70g
+Weekly Contest 192  === https://www.youtube.com/watch?v=6IA4ZN1PCzs
+Biweekly Contest 28  === https://www.youtube.com/watch?v=ZsNlLx9oixk
+Weekly Contest 193  === https://www.youtube.com/watch?v=4svj-gcX1d8
+Weekly Contest 194  === https://www.youtube.com/watch?v=4tP4qfQxBkk
+Leetcode weekly contest 195  === https://www.youtube.com/watch?v=tW9m1FgFE-Q
+Leetcode Weekly Contest 196  === https://www.youtube.com/watch?v=a2enr5iV150
+Private video === https://www.youtube.com/watch?v=72VxHrWPcTc
+Biweekly Contest 30  === https://www.youtube.com/watch?v=7tGMi35osZg
+Reverse Bits  === https://www.youtube.com/watch?v=twhTbBHrsDo
+Biweekly Contest 31  === https://www.youtube.com/watch?v=hSI4hXHOPpY
+Weekly Contest 199  === https://www.youtube.com/watch?v=c6MJSqfEQ94
+Biweekly Contest 32  === https://www.youtube.com/watch?v=dQYGGO3Qyzk
+Weekly Contest 201  === https://www.youtube.com/watch?v=YerfZ-5h1Aw
+Weekly Contest 202  === https://www.youtube.com/watch?v=wigIqerF9h4
+Biweekly Contest 33  === https://www.youtube.com/watch?v=yO0VKAlzlVg
+Leetcode Weekly Contest 203  === https://www.youtube.com/watch?v=ZJFP49Tholc
+Biweekly Contest 34  === https://www.youtube.com/watch?v=2lb0qFs-cRg
+Count All Possible Routes  === https://www.youtube.com/watch?v=0NRDfkLyyE8
+Weekly Contest 205  === https://www.youtube.com/watch?v=dGS3WKHbx70
+Leetcode Biweekly Contest 35  === https://www.youtube.com/watch?v=KZYTXiax7nQ
+Leetcode Weekly Contest 207  === https://www.youtube.com/watch?v=CFTQIXPjzgc
+Private video === https://www.youtube.com/watch?v=PY9fKQXFYTE
+Biweekly Contest 36  === https://www.youtube.com/watch?v=4lG_rRTDPKk
+Leetcode Weekly Contest 208  === https://www.youtube.com/watch?v=GEt91JLW5T4
+Leetcode Weekly Contest 210  === https://www.youtube.com/watch?v=sdxZXKlTxCM
+1621. Number of Sets of K Non-Overlapping Line Segments  === https://www.youtube.com/watch?v=B29hS-VuqVI
+6 Adding Two Negabinary Numbers  === https://www.youtube.com/watch?v=vpxFvr-5hJQ
+Biweekly Contest 38  === https://www.youtube.com/watch?v=1qkqRFPw3cE
+1631. Path With Minimum Effort  === https://www.youtube.com/watch?v=xrozg2SQpVA
+1402. Reducing Dishes  === https://www.youtube.com/watch?v=mB24wDI0Bp0
+Weekly Contest 215  === https://www.youtube.com/watch?v=8mpkUKCuVP8
+Biweekly Contest 40  === https://www.youtube.com/watch?v=SzwlyhENzN4
+Leetcode Weekly Contest 225  === https://www.youtube.com/watch?v=35PczqJs4Og
+Leetcode Biweekly Contest 45  === https://www.youtube.com/watch?v=dAhk7gqMRs0
+Leetcode Weekly Contest 227  === https://www.youtube.com/watch?v=O3Duou0TA8o
+Leetcode Weekly Contest 229  === https://www.youtube.com/watch?v=QAvsjaYZ5Z0
+Leetcode Weekly Contest 230  === https://www.youtube.com/watch?v=G40AIdhGGVM
+Leetcode Biweekly Contest 47  === https://www.youtube.com/watch?v=3D6sLaUgnAA
+Leetcode Weekly Contest 232  === https://www.youtube.com/watch?v=HuseLrlJIuU
+Leetcode Biweekly Contest 48  === https://www.youtube.com/watch?v=RzYKVMqze7g
+Leetcode Biweekly Contest 49 === https://www.youtube.com/watch?v=tLhfzpDs51s
+1819. Number of Different Subsequences GCDs  === https://www.youtube.com/watch?v=ZYJDCcKnwag
+Leetcode Biweekly Contest 50  === https://www.youtube.com/watch?v=Ifap4R4HTHQ
+Leetcode Weekly Contest 238  === https://www.youtube.com/watch?v=Y1egnB4rTrk
+Leetcode Biweekly Contest 51  === https://www.youtube.com/watch?v=RwMi8FJjbfo
+Private video === https://www.youtube.com/watch?v=xSKE5A_dltI
+Leetcode Biweekly Contest 52  === https://www.youtube.com/watch?v=g-XDf-O_6tI
+1869. Longer Contiguous Segments of Ones than Zeros  === https://www.youtube.com/watch?v=h328t7WGOl4
+1870. Minimum Speed to Arrive on Time  === https://www.youtube.com/watch?v=aYY3BzUaYU0
+Leetcode Biweekly Contest 53  === https://www.youtube.com/watch?v=TU0ycAw_jWc
+Leetcode Weekly Contest 245  === https://www.youtube.com/watch?v=GiBQHnp3wfk
+Leetcode Weekly Contest 246  === https://www.youtube.com/watch?v=W_FAPjvBOVA
+Leetcode Weekly Contest 248  === https://www.youtube.com/watch?v=nZAwYJiB5j0
+LEETCODE BIWEEKLY CONTEST 56  === https://www.youtube.com/watch?v=GGN0w9XlxMY
+Leetcode Biweekly Contest 57  === https://www.youtube.com/watch?v=aJe_FmsVx3c
+Leetcode Weekly Contest 251  === https://www.youtube.com/watch?v=HIAP_rsJTj4
+Leetcode Weekly Contest 253  === https://www.youtube.com/watch?v=472X1S4_YXI
+Leetcode biweekly Contest 58  === https://www.youtube.com/watch?v=RFqP-MSdLW8
+LEETCODE Weekly Contest 254  === https://www.youtube.com/watch?v=vbA6cfEqd90
+Leetcode Weekly Contest 255  === https://www.youtube.com/watch?v=hJZuYCBRm3M
+2047. Number of Valid Words in a Sentence  === https://www.youtube.com/watch?v=edbAZUvbPbc
+2054. Two Best Non-Overlapping Events  === https://www.youtube.com/watch?v=DQbfHqzgasU
+2055. Plates Between Candles  === https://www.youtube.com/watch?v=G0Sy71_lBAw
+Count Fertile Pyramids in a Land  === https://www.youtube.com/watch?v=bS812DRg6ds
+Leetcode Weekly Contest 269  === https://www.youtube.com/watch?v=il_J2dVjyo8
+Leetcode Weekly Contest 270  === https://www.youtube.com/watch?v=-hINmwP6MnU
+LEETCODE Biweekly Contest 67  === https://www.youtube.com/watch?v=6JjoAaJ1qmA
+Leetcode Weekly Contest 273  === https://www.youtube.com/watch?v=eJzXQAJYErQ
+Leetcode Biweekly Contest 70  === https://www.youtube.com/watch?v=CCFoiaDUQ2w
+Leetcode Weekly Contest 277  === https://www.youtube.com/watch?v=cG3I2FgEnd8
+9. Palindrome Number  === https://www.youtube.com/watch?v=uNSdy7-JKtI
+Leetcode Biweekly Contest 77  === https://www.youtube.com/watch?v=UhYX_AgP7LE
+Leetcode Weekly Contest 291  === https://www.youtube.com/watch?v=qCTLHgTaI8c
+326. Power of Three  === https://www.youtube.com/watch?v=kkmAsWKl928
+202. Happy Number  === https://www.youtube.com/watch?v=-TvagcNhNpo
+Leetcode Weekly Contest 294  === https://www.youtube.com/watch?v=iEZbDcO55C4
+Leetcode Biweekly Contest 80  === https://www.youtube.com/watch?v=yTuIcDkbyTk
+292. Nim Game  === https://www.youtube.com/watch?v=36wTBRkj6Ro
+Weekly Contest 302  === https://www.youtube.com/watch?v=36ZpNfDNXMs

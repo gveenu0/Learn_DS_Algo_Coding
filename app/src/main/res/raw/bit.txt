@@ -1,0 +1,6 @@
+342. Power of Four  === https://www.youtube.com/watch?v=Ul7uGql3aN0
+476. Number Complement  === https://www.youtube.com/watch?v=BaGKt0QXqVU
+1318. Minimum Flips to Make a OR b Equal to c  === https://www.youtube.com/watch?v=hjDLgcOuk_w
+231. Power of Two  === https://www.youtube.com/watch?v=lH-3Mcwf48w
+191. Number of 1 Bits  === https://www.youtube.com/watch?v=MLCq8rN2EWI
+461. Hamming Distance  === https://www.youtube.com/watch?v=IMj2NNCZg2o

@@ -28,12 +28,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_array"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_array" />
 
@@ -41,7 +44,9 @@
                         android:id="@+id/tv_array"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Array"
@@ -52,12 +57,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_matrix"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_matrix" />
 
@@ -65,7 +73,9 @@
                         android:id="@+id/tv_matrix"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Matrix"
@@ -76,12 +86,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_string"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_string" />
 
@@ -89,7 +102,9 @@
                         android:id="@+id/tv_string"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="String"
@@ -100,12 +115,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_searching_sort"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_search_sort" />
 
@@ -113,7 +131,9 @@
                         android:id="@+id/tv_search_sort"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Search Sort"
@@ -124,12 +144,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_linkedlist"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_linklist" />
 
@@ -137,7 +160,9 @@
                         android:id="@+id/tv_linkedlist"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Linked List"
@@ -148,12 +173,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_binary_tree"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_binarytree" />
 
@@ -161,7 +189,9 @@
                         android:id="@+id/tv_binary_tree"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Binary Tree"
@@ -172,12 +202,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_binary_search_tree"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_binarysearch" />
 
@@ -185,10 +218,12 @@
                         android:id="@+id/tv_binary_search_tree"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
-                        android:text="Binary Search Tree"
+                        android:text="Miscellaneous"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -196,12 +231,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_greedy"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_greedy" />
 
@@ -209,7 +247,9 @@
                         android:id="@+id/tv_greedy"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Greedy Approach"
@@ -220,12 +260,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_back_tracking"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_backtracking" />
 
@@ -233,7 +276,9 @@
                         android:id="@+id/tv_back_tracking"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Back Tracking"
@@ -244,12 +289,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_stack_Qurues"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_stack" />
 
@@ -257,7 +305,9 @@
                         android:id="@+id/tv_stack_Qurues"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Stack and Queues"
@@ -268,12 +318,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_heap"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_heap" />
 
@@ -281,7 +334,9 @@
                         android:id="@+id/tv_heap"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Heap"
@@ -292,12 +347,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_graph"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_graph" />
 
@@ -305,7 +363,9 @@
                         android:id="@+id/tv_graph"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Graph"
@@ -316,12 +376,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_trie"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_trie" />
 
@@ -329,7 +392,9 @@
                         android:id="@+id/tv_trie"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Trie"
@@ -340,12 +405,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_dp"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_dynamic" />
 
@@ -353,7 +421,9 @@
                         android:id="@+id/tv_dp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Dynamic Programming"
@@ -364,12 +434,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
+                    android:background="#F3FBFB"
                     android:weightSum="5">
 
                     <ImageView
                         android:id="@+id/iv_bit_manipulation"
                         android:layout_width="0dp"
                         android:layout_height="50dp"
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/ic_bitmanipulation" />
 
@@ -377,7 +450,9 @@
                         android:id="@+id/tv_bit_manipulation"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_marginHorizontal="8dp"
+
+                        android:layout_margin="1dp"
+                        android:background="@color/colorwhite"
                         android:layout_weight="4"
                         android:gravity="center_vertical"
                         android:text="Bit Manipulation"

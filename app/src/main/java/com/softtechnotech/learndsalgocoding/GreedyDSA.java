@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +24,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class ArrayDSA extends AppCompatActivity {
+public class GreedyDSA extends AppCompatActivity {
 
     String videoId;
     YouTubePlayerView youTubePlayerView;
@@ -41,7 +42,7 @@ public class ArrayDSA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         tracker = new YouTubePlayerTracker();
-
+        
         setContentView(R.layout.activity_ds_algo_detail);
         listVideo = findViewById(R.id.list_video);
         youTubePlayerView = findViewById(R.id.youtube_player_view);
@@ -76,7 +77,7 @@ public class ArrayDSA extends AppCompatActivity {
         Log.e("Video_Link", videoLink + "");
         objAdapter = new AdapterList(getApplicationContext(), videoName);
         listVideo.setAdapter(objAdapter);
-        ArrayDSA.this.getLifecycle().addObserver(youTubePlayerView);
+        GreedyDSA.this.getLifecycle().addObserver(youTubePlayerView);
         youTubePlayerView.addYouTubePlayerListener(tracker);
         youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
@@ -92,7 +93,7 @@ public class ArrayDSA extends AppCompatActivity {
                     videoId=extractYoutubeId(videoLink.get(i));
                     Log.e("Video_Id", videoId + "");
                     YouTubePlayerUtils.loadOrCueVideo(
-                            youTubePlayer, ArrayDSA.this.getLifecycle(),
+                            youTubePlayer, GreedyDSA.this.getLifecycle(),
                             videoId, 0f
                     );
                 });
@@ -120,7 +121,7 @@ public class ArrayDSA extends AppCompatActivity {
     public ArrayList<String> getVideoInfo(int i) {
         ArrayList<String> videoInfo = new ArrayList<>();
         try {
-            InputStream XmlFileInputStream = getResources().openRawResource(R.raw.array);
+            InputStream XmlFileInputStream = getResources().openRawResource(R.raw.greedy);
             BufferedReader br = new BufferedReader(new InputStreamReader(XmlFileInputStream));
             String line;
             while ((line = br.readLine()) != null) {
@@ -133,7 +134,7 @@ public class ArrayDSA extends AppCompatActivity {
     }
     public void startYtFull(){
         intent.putExtra("videoId",videoId);
-        intent.putExtra("className","ArrayDSA.java");
+        intent.putExtra("className","GreedyDSA.java");
         intent.putExtra("timeStamp", tracker.getCurrentSecond());
         startActivity(intent);
     }
