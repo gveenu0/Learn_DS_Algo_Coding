@@ -223,7 +223,7 @@ public class DsAlgoAct extends AppCompatActivity {
     public void  shareText(){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        String shareText = "Please, share with friends to support my Efforts. Thanks in Advance. Play store Download Link https://play.google.com/store/apps/details?id=com.softtechnotech.mathhandbook";
+        String shareText = "Please, share with friends to support my Efforts. Thanks in Advance. Play store Download Link https://play.google.com/store/apps/details?id=com.softtechnotech.learndsalgocoding";
         intent.putExtra(Intent.EXTRA_TEXT,shareText);
         startActivity(Intent.createChooser(intent,"Choose sharing Method"));
     }

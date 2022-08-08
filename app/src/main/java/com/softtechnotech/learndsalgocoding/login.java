@@ -67,7 +67,7 @@ public class login extends AppCompatActivity {
                 nDialog.setIndeterminate(false);
                 nDialog.setCancelable(true);
                 nDialog.show();
-                strNewUsername = username.getText().toString();
+                strNewUsername = username.getText().toString().trim();
                 strPassword = password.getText().toString();
                 strUsername = strNewUsername.replaceAll("[@.]","");
                 if(strNewUsername.isEmpty()){
