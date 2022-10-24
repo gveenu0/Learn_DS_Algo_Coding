@@ -1,6 +1,5 @@
 package com.softtechnotech.learndsalgocoding;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,18 +8,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -28,6 +25,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import java.util.Objects;
 
 public class DsAlgoAct extends AppCompatActivity {
     com.softtechnotech.learndsalgocoding.DatabaseHelper myDb;
@@ -45,6 +43,9 @@ public class DsAlgoAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ds_algo);
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         TextView tv_array = findViewById(R.id.tv_array);
         TextView tv_matrix = findViewById(R.id.tv_matrix);
         TextView tv_string= findViewById(R.id.tv_string);
@@ -66,7 +67,6 @@ public class DsAlgoAct extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         rootRef = FirebaseDatabase.getInstance().getReference();
         initDB();
-
 
         tv_array.setOnClickListener(view -> {
             Intent intent = new Intent(DsAlgoAct.this, ArrayDSA.class);
@@ -135,61 +135,64 @@ public class DsAlgoAct extends AppCompatActivity {
         dl.addDrawerListener(abdt);
         abdt.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-                if(id == R.id.aboutApp){
-                    startAboutActivity();
-                }
-                else if(id == R.id.updatePassword){
-                    startUpdatePasswordActivity();
-                }
-                else if(id == R.id.contactUs){
-                    startContactUsActivity();
-                }
-                else if(id == R.id.updateYourDetails){
-                    startUpdateYourDetailsActivity();
-                }
-                else if(id == R.id.shareApp){
-                    shareText();
-                }
-                else if(id == R.id.Logout){
-                    if(flag == 1 || flagLogin == 1){
-                        FirebaseAuth.getInstance().signOut();
-                        startLogoutActivity();
-                    }
-                    else if(flag == 2 || flagLogin == 2){
-                        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.remove("LOGIN");
-                        editor.commit();
-                        FirebaseAuth.getInstance().signOut();
-                        startLogoutActivity();
-                    }
-                    else{
-                        startSmwActivity();
-                    }
-                }
-                return false;
+        nav_view.setNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if(id == R.id.aboutApp){
+                startAboutActivity();
             }
+            else if(id == R.id.updatePassword){
+                startUpdatePasswordActivity();
+            }
+            else if(id == R.id.contactUs){
+                startContactUsActivity();
+            }
+            else if(id == R.id.updateYourDetails){
+                startUpdateYourDetailsActivity();
+            }
+            else if(id == R.id.shareApp){
+                shareText();
+            }
+            else if(id == R.id.Logout){
+                if(flag == 1 || flagLogin == 1){
+                    FirebaseAuth.getInstance().signOut();
+                    startLogoutActivity();
+                }
+                else if(flag == 2 || flagLogin == 2){
+                    SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.remove("LOGIN");
+                    editor.commit();
+                    FirebaseAuth.getInstance().signOut();
+                    startLogoutActivity();
+                }
+                else{
+                    startSmwActivity();
+                }
+            }
+            return false;
         });
 
-        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-                if(id == R.id.ds_algo){
-                    startDsAlgoActivity();
-                }
-                else if(id == R.id.python){
-                    startPythonActivity();
-                }
-                else if(id == R.id.java){
-                    startJavaActivity();
-                }
-                return false;
+        navigationView.setOnNavigationItemSelectedListener(item -> {
+            int id = item.getItemId();
+            if(id == R.id.ds_algo){
+                startDsAlgoActivity();
+//                findViewById(R.id.ll_ds_algo).setVisibility(View.VISIBLE);
+//                findViewById(R.id.ll_python).setVisibility(View.GONE);
+//                findViewById(R.id.ll_java).setVisibility(View.GONE);
             }
+            else if(id == R.id.python){
+                startPythonActivity();
+//                findViewById(R.id.ll_ds_algo).setVisibility(View.GONE);
+//                findViewById(R.id.ll_python).setVisibility(View.VISIBLE);
+//                findViewById(R.id.ll_java).setVisibility(View.GONE);
+            }
+            else if(id == R.id.java){
+                startJavaActivity();
+//                findViewById(R.id.ll_ds_algo).setVisibility(View.GONE);
+//                findViewById(R.id.ll_python).setVisibility(View.GONE);
+//                findViewById(R.id.ll_java).setVisibility(View.VISIBLE);
+            }
+            return false;
         });
     }
     @Override
@@ -220,7 +223,7 @@ public class DsAlgoAct extends AppCompatActivity {
     public void  shareText(){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        String shareText = "Please, share with friends to support my Efforts. Thanks in Advance. Play store Download Link https://play.google.com/store/apps/details?id=com.softtechnotech.mathhandbook";
+        String shareText = "Please, share with friends to support my Efforts. Thanks in Advance. Play store Download Link https://play.google.com/store/apps/details?id=com.softtechnotech.learndsalgocoding";
         intent.putExtra(Intent.EXTRA_TEXT,shareText);
         startActivity(Intent.createChooser(intent,"Choose sharing Method"));
     }
@@ -236,7 +239,6 @@ public class DsAlgoAct extends AppCompatActivity {
         Intent intent = new Intent(this, com.softtechnotech.learndsalgocoding.MainActivity.class);
         startActivity(intent);
     }
-
     public void startJavaActivity(){
         Intent intent = new Intent(this, JavaAct.class);
         startActivity(intent);
@@ -268,6 +270,7 @@ public class DsAlgoAct extends AppCompatActivity {
             FirebaseUser currentUser = mAuth.getCurrentUser();
             assert currentUser != null;
             preEmail = currentUser.getEmail();
+            assert preEmail != null;
             userName = preEmail.replaceAll("[@.]","");
             Menu nav_menu = nav_view.getMenu();
             nav_menu.findItem(R.id.updatePassword).setVisible(false);
@@ -278,19 +281,16 @@ public class DsAlgoAct extends AppCompatActivity {
             preEmail = sharedPreferences.getString("EMAIL", null);
             userName = sharedPreferences.getString("USERNAME", null);
             if(strPassword != null){
-                mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(DsAlgoAct.this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                            if (user != null) {
-                                boolean emailVerified = user.isEmailVerified();
-                            }
+                mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(DsAlgoAct.this, task -> {
+                    if(task.isSuccessful()){
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        if (user != null) {
+                            boolean emailVerified = user.isEmailVerified();
                         }
-                        else{
-                            Toast.makeText(DsAlgoAct.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
+                    }
+                    else{
+                        Toast.makeText(DsAlgoAct.this, "Authentication failed.",
+                                Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -303,7 +303,6 @@ public class DsAlgoAct extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
             startSmwActivity();
         }
-
 //Firebase Helper and Firebase Authentication //
         sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
         strStudentName = sharedPreferences.getString("CUSTOMERNAME", null);
@@ -317,29 +316,26 @@ public class DsAlgoAct extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.child("userEmail").exists()){
-                    String preEmail = dataSnapshot.child("userEmail").getValue().toString();
+                    String preEmail = Objects.requireNonNull(dataSnapshot.child("userEmail").getValue()).toString();
                     sharedPreferences = getApplicationContext().getSharedPreferences("Preferences", 0);
                     strPassword = sharedPreferences.getString("LOGIN", null);
-                    mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(DsAlgoAct.this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful()){
-                                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                                if (user != null) {
-                                    boolean emailVerified = user.isEmailVerified();
-                                    if(!emailVerified){
-                                        new AlertDialog.Builder(DsAlgoAct.this)
-                                                .setTitle("Email Verification")
-                                                .setMessage("Please verify your email id")
-                                                .setPositiveButton(android.R.string.yes, (dialog, which) -> {
-                                                }).show();
-                                    }
+                    mAuth.signInWithEmailAndPassword(preEmail, strPassword).addOnCompleteListener(DsAlgoAct.this, task -> {
+                        if(task.isSuccessful()){
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                            if (user != null) {
+                                boolean emailVerified = user.isEmailVerified();
+                                if(!emailVerified){
+                                    new AlertDialog.Builder(DsAlgoAct.this)
+                                            .setTitle("Email Verification")
+                                            .setMessage("Please verify your email id")
+                                            .setPositiveButton(android.R.string.yes, (dialog, which) -> {
+                                            }).show();
                                 }
                             }
-                            else{
-                                Toast.makeText(DsAlgoAct.this, "Authentication failed.",
-                                        Toast.LENGTH_SHORT).show();
-                            }
+                        }
+                        else{
+                            Toast.makeText(DsAlgoAct.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
                         }
                     });
                 }

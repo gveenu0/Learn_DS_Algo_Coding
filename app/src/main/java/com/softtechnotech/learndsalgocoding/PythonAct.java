@@ -31,15 +31,9 @@ public class PythonAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python);
-//        TextView tv_array = findViewById(R.id.tv_array);
         nav_view = (NavigationView)findViewById(R.id.nav_view);
         final BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
 
-
-//        tv_array.setOnClickListener(view -> {
-//            Intent intent = new Intent(JavaAct.this, ArrayDSA.class);
-//            startActivity(intent);
-//        });
 
         dl = (DrawerLayout) findViewById(R.id.dl);
         abdt = new ActionBarDrawerToggle(this,dl,R.string.Open,R.string.Close);
@@ -132,7 +126,7 @@ public class PythonAct extends AppCompatActivity {
     public void  shareText(){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        String shareText = "Please, share with friends to support my Efforts. Thanks in Advance. Play store Download Link https://play.google.com/store/apps/details?id=com.softtechnotech.mathhandbook";
+        String shareText = "Please, share with friends to support my Efforts. Thanks in Advance. Play store Download Link https://play.google.com/store/apps/details?id=com.softtechnotech.learndsalgocoding";
         intent.putExtra(Intent.EXTRA_TEXT,shareText);
         startActivity(Intent.createChooser(intent,"Choose sharing Method"));
     }

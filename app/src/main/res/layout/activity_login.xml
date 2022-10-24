@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:text="your loyalty and our support \n make customer happy"
+            android:text="Makes you learning \n Experience Easy"
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="italic|bold"
             android:fontFamily="cursive"

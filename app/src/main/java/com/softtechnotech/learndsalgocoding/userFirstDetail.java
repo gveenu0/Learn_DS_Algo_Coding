@@ -45,7 +45,7 @@ public class userFirstDetail extends AppCompatActivity {
         yourEmail.setEnabled(false);
 
         rootRef = FirebaseDatabase.getInstance().getReference();
-        demoRef = rootRef.child("Invoice").child(registerPage.username);
+        demoRef = rootRef.child("Users").child(registerPage.username);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

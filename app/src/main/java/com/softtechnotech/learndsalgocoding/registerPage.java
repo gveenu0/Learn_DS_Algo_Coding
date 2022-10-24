@@ -69,7 +69,7 @@ public class registerPage extends AppCompatActivity {
                 nDialog.setIndeterminate(false);
                 nDialog.setCancelable(true);
                 nDialog.show();
-                strUsername = uname.getText().toString();
+                strUsername = uname.getText().toString().trim();
                 password = pwd.getText().toString();
                 rePassword = rePwd.getText().toString();
                 username =strUsername.replaceAll("[@.]","");
